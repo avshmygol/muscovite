@@ -1,0 +1,55 @@
+.text_center {
+  text-align: center;
+}
+
+.buffer_left_small {
+  margin-left: 20px;
+}
+
+.buffer-both {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul.list_with_buffer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 60px;
+}
+
+ol.list_with_buffer {
+  display: block;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.text_background {
+  background: #F0F1F5;
+}
+
+.text_green {
+  color: green;
+}
+
+.text_red {
+  color: red;
+}
+
+.paragraph_left {
+  padding: 15px;
+}
+
+.paragraph_right {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+@media (max-width: 960px) {
+  .paragraph_left,
+  .paragraph_right {
+    padding: 15px;
+  }
+}

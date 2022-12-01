@@ -1,0 +1,116 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: 'Comfortaa', cursive, Trebuchet MS;
+  color: #222;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.footer {
+  margin: 0 auto;
+  flex-shrink: 0;
+  height: 80px;
+  width: 1200px;
+  background: white;
+}
+
+.content_40_60 {
+  padding: 20px 20px;
+}
+
+.content_40_60_left {
+  width: 40%;
+  float: left;
+}
+
+.content_40_60_right {
+  width: 60%;
+  float: left;
+}
+
+.content_40_60:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.content_60_40 {
+  padding: 20px 20px;
+  background: #EEE;
+}
+
+.content_60_40_left {
+  width: 60%;
+  float: left;
+}
+
+.content_60_40_right {
+  width: 40%;
+  float: left;
+}
+
+.content_60_40:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .footer {
+    width: 900px;
+  }
+
+  .header-logo {
+    float: none;
+    width: 100%;
+  }
+
+  .content_40_60,
+  .content_60_40 {
+    padding: 0;
+  }
+
+  .content_40_60_left,
+  .content_40_60_right,
+  .content_60_40_left,
+  .content_60_40_right {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 600px;
+    font-size: 1.5em;
+  }
+
+  .footer {
+    width: 600px;
+  }
+}

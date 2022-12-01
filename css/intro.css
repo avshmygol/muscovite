@@ -1,0 +1,20 @@
+.intro {
+  width: 1200px;
+  height: 300px;
+  margin-bottom: 20px;
+  padding: 0;
+  background-image: url(../img/intro_bg.png);
+  background-repeat: no-repeat;
+}
+
+.intro-text {
+  margin-top: 220px;
+  margin-left: 400px;
+  color: white;
+}
+
+@media (max-width: 960px) {
+  .intro {
+    display: none;
+  }
+}

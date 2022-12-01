@@ -1,0 +1,24 @@
+.header {
+  max-width: 100%;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  background: white;
+  opacity: 90%;
+}
+
+.header-logo {
+  float: left;
+  width: 50%;
+  margin: 10px;
+}
+
+.header-logo img {
+  margin: 0 10px ;
+  float: left;
+}
+
+.header-logo p {
+  display: block;
+  padding-top: 20px ;
+}

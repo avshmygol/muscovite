@@ -1,0 +1,10 @@
+#accordion {
+  width: 680px;
+  font-family: 'Comfortaa', cursive, Trebuchet MS;
+}
+
+@media (max-width: 960px) {
+  #accordion {
+    width: 100%;
+  }
+}
