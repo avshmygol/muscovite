@@ -18,10 +18,12 @@
   <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
   <!-- jQuery UI -->
   <link rel="stylesheet" href="js/jquery-ui-1.13.2.custom/jquery-ui.min.css">
-  <script type="text/javascript" src="js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" charset="UTF-8" src="js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
   <!-- Parallax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <script type="text/javascript" src="js/basic.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <script type="text/javascript" charset="UTF-8" src="js/parallax.js-1.5.0/parallax.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="js/basic.js"></script>
   <title>Новый &laquo;Москвич&raquo;</title>
 </head>
 <body>
@@ -33,12 +35,14 @@
           <img src="img/logo_brand.png" width="30" height="48" alt="Brand logo">
           <p>Тестдрайв нового &laquo;Москвича&raquo;</p>
         </div>
+        <div class="buffer-both">
+          <!-- <a class="button button-green" href="#drive">Записаться</a> -->
+          <!-- <input class="button button-green" type="submit" value="Записаться"> -->
+        </div>
       </div>
 
-      <div class="intro" id="scene">
-        <div data-depth="0.40" data-limit-x="50" data-limit-y="50" data-scalar-x="5.0" data-scalar-y="5.0">
-          <img class="intro-near-layer" src="img/intro_brand.png" alt="Brand name">
-        </div>
+      <div class="intro" id="intro" data-parallax="scroll" data-image-src="img/intro.jpg">
+        <img class="intro-logo" src="img/intro_brand.png" alt="Brand name">
         <div class="intro-text">
           <p>
             Хотите прокатиться на новом &laquo;Москвиче&raquo; 3?
@@ -143,7 +147,7 @@
         </div>
       </div>
 
-      <div class="content_60_40">
+      <div class="content_60_40" id="drive">
         <div class="content_60_40_left">
           <div id="accordion">
             <h3>Где будет проходить тестдрайв?</h3>
@@ -184,7 +188,7 @@
                 <input class="form-input-text" type="email" name="lead[email]" placeholder="Ваш Email" required />
               </p>
               <div class="buffer-both">
-                <input type="submit" class="button button-green" value="Записаться">
+                <input class="button button-green" type="submit" value="Записаться">
               </div>
             </form>
           </div>
