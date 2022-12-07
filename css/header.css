@@ -4,12 +4,17 @@
   overflow: hidden;
   top: 0;
   background: white;
-  /*opacity: 90%;*/
 }
 
 .header-logo {
   float: left;
-  width: 50%;
+  width: 40%;
+  margin: 60px;
+}
+
+.header-button {
+  float: left;
+  width: 40%;
   margin: 60px;
 }
 
@@ -21,4 +26,12 @@
 .header-logo p {
   display: block;
   padding-top: 20px ;
+}
+
+.header:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
