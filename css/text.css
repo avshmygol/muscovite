@@ -14,7 +14,7 @@
 ul.list_with_buffer {
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 ol.list_with_buffer {
@@ -46,9 +46,13 @@ ol.list_with_buffer {
   padding: 15px;
 }
 
+.paragraph_right_20 {
+  padding: 10px 20px;
+}
+
 .paragraph_right {
   padding-top: 10px;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 @media (max-width: 960px) {

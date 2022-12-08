@@ -27,3 +27,16 @@
   display: block;
   padding-top: 20px ;
 }
+
+@media (max-width: 960px) {
+  .header {
+    height: 180px;
+  }
+
+  .header-logo,
+  .header-button {
+    float: none;
+    width: 100%;
+    margin: 20px;
+  }
+}
