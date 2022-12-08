@@ -14,7 +14,7 @@
 ul.list_with_buffer {
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 ol.list_with_buffer {
@@ -32,6 +32,10 @@ ol.list_with_buffer {
 
 .text_green {
   color: green;
+}
+
+.text_orange {
+  color: orange;
 }
 
 .text_red {

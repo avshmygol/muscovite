@@ -1,8 +1,10 @@
 .intro {
-  width: 1200px;
-  height: 200px;
-  margin-bottom: 20px;
-  padding: 100px;
+  width: 100%;
+  height: 450px;
+  padding: 0;
+  margin-bottom: 30px;
+
+  background: url("../img/intro-01.png");
   background-color: rgba(0, 0, 0, 0);
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,17 +13,47 @@
 }
 
 .intro-logo {
-    margin-top: 0px;
+  max-width: 80%;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 
 .intro-text {
   margin-top: 20px;
-  margin-left: 400px;
+  margin-left: 200px;
   color: white;
 }
 
+.intro:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 @media (max-width: 960px) {
-  .intro {
-    display: none;
+  .intro-logo {
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+
+  .intro-text {
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-logo {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .intro-text {
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }

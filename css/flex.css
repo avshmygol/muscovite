@@ -19,14 +19,14 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1400px;
 }
 
 .footer {
+  width: 100%;
+  height: 80px;
   margin: 0 auto;
   flex-shrink: 0;
-  height: 80px;
-  width: 1400px;
   background: white;
 }
 
@@ -78,14 +78,17 @@ body {
 @media (max-width: 960px) {
   .container {
     width: 100%;
-    font-size: 1.5em;
+/*    font-size: 1.3em;*/
   }
 
-  .footer {
-    width: 900px;
+  .header {
+    top: 0;
+    width: 100%;
+    height: 270px;
   }
 
-  .header-logo {
+  .header-logo,
+  .header-button {
     float: none;
     width: 100%;
   }
@@ -106,11 +109,6 @@ body {
 
 @media (max-width: 640px) {
   .container {
-    width: 600px;
-    font-size: 1.5em;
-  }
-
-  .footer {
-    width: 600px;
+/*    font-size: 1.5em;*/
   }
 }
